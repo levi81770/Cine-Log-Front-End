@@ -7,6 +7,7 @@ import Landing from "./components/Landing/Landing";
 import Dashboard from "./components/Dashboard/Dashboard";
 import MoviesIndex from "./components/MoviesIndex/MoviesIndex";
 import MovieShow from './components/MovieShow/MovieShow';
+import PostShow from "./components/PostShow/PostShow";
 import { UserContext } from "./contexts/UserContext";
 
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/movies/:movieId" element={<MovieShow />} />
         <Route path="/sign-up" element={<SignUpForm />} />
         <Route path="/sign-in" element={<SignInForm />} />
+        <Route path="/posts/:postId" element={<PostShow />} />
       </Routes>
     </>
   );

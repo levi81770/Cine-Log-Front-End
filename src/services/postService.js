@@ -35,6 +35,20 @@ export const createPost = async (movieId, content) => {
   }
 }
 
+export const show = async (postId) => {
+  try {
+    const res = await fetch(`${BASE_URL}/posts/${postId}`);
+    const data = await res.json();
+    if (data.error) {
+      throw new Error(data.error);
+    }
+    return data;
+  } catch (err) {
+    console.error(err);
+    throw err;
+  }
+}
+
 export const updatePost = async (postId, content) => {
   try {
     const res = await fetch(`${BASE_URL}/posts/${postId}`, {
