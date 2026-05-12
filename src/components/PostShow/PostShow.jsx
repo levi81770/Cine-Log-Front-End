@@ -21,7 +21,6 @@ const PostShow = () => {
       try {
         const [postsData, commentsData] = await Promise.all([
           show(postId),
-          fetch('${import.meta.env.VITE_BACK_END_SERVER_URL}/posts/${postId}').then(res => res.json()),
           getCommentsByPost(postId),
         ]);
         setPost(postsData);

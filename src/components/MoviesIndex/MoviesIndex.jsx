@@ -65,9 +65,9 @@ const MoviesIndex = () => {
       ) : (
         <div>
           {movies.map((movie) => (
-            <div key={movie.id} onClick={() => navigate(`/movies/${movie.id}`)}>
+            <div key={movie._id} onClick={() => navigate(`/movies/${movie._id}`)}>
               <h2>{movie.title}</h2>
-              <p>{movie.year} · {movie.genre?.join(', ')}</p>
+              <p>{movie.year} · {movie.genres?.join(', ')}</p>
             </div>
           ))}
         </div>

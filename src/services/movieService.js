@@ -9,7 +9,7 @@ export const index = async (page = 1, genre = '') => {
     const res = await fetch(`${BASE_URL}?${query}`)
     const data = await res.json()
 
-    if (data.error) throw new Error("data.error");
+    if (data.error) throw new Error(data.error);
     
     return data
   } catch (err) {
@@ -24,7 +24,7 @@ export const show = async (movieId) => {
     const res = await fetch(`${BASE_URL}/${movieId}`)
     const data = await res.json()
 
-    if (data.error) throw new Error("data.error");
+    if (data.error) throw new Error(data.error);
     
     return data
   } catch (err) {
@@ -38,8 +38,8 @@ export const getGenres = async () => {
     const res = await fetch(`${BASE_URL}/genres/all`)
     const data = await res.json()
 
-    if (data.error) throw new Error("data.error");
-    
+    if (data.error) throw new Error(data.error);
+
     return data
   } catch (err) {
     console.error('Error fetching genres:', err);

@@ -19,7 +19,7 @@ export const createComment = async (postId, content) => {
       method: 'POST', 
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `bearer ${localStorage.getItem('token')}`
+        Authorization: `Bearer ${localStorage.getItem('token')}`
       },
       body: JSON.stringify({ content })
     })
@@ -37,7 +37,7 @@ export const deleteComment = async (postId, commentId) => {
     const res = await fetch(`${BASE_URL}/posts/${postId}/comments/${commentId}`, {
       method: 'DELETE',
       headers: {
-        Authorization: `bearer ${localStorage.getItem('token')}`
+        Authorization: `Bearer ${localStorage.getItem('token')}`
       }
     })
     const data = await res.json()

@@ -50,7 +50,7 @@ const MovieShow = () => {
     <main>
       <h1>{movie.title}</h1>
       <p>
-        {movie.year} · {movie.genre?.join(", ")}
+        {movie.year} · {movie.genres?.join(", ")}
       </p>
       <p>{movie.plot}</p>
 
