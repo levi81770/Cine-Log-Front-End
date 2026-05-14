@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Barlow:wght@400;600&display=swap');
+
+.navbar {
+  background:    #1C1C1C;
+  border-bottom: 3px solid #C0392B;
+  padding:       0 40px;
+  height:        60px;
+  display:       flex;
+  align-items:   center;
+  justify-content: space-between;
+  position:      sticky;
+  top:           0;
+  z-index:       100;
+}
+
+.navbar-logo {
+  font-family:     'Playfair Display', serif;
+  font-size:       22px;
+  font-weight:     700;
+  color:           #F7F4EF;
+  text-decoration: none;
+  letter-spacing:  2px;
+}
+
+.navbar-logo span {
+  color: #C0392B;
+}
+
+.navbar-links {
+  list-style:  none;
+  margin:      0;
+  padding:     0;
+  display:     flex;
+  align-items: center;
+  gap:         32px;
+}
+
+.navbar-links a {
+  font-family:     'Barlow', sans-serif;
+  font-size:       12px;
+  font-weight:     600;
+  letter-spacing:  1.5px;
+  text-transform:  uppercase;
+  color:           #B4B2A9;
+  text-decoration: none;
+  transition:      color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #F7F4EF;
+}
+
+.navbar-welcome {
+  font-family:    'Barlow', sans-serif;
+  font-size:      12px;
+  letter-spacing: 1px;
+  color:          #888780;
+  text-transform: uppercase;
+}
+
+.navbar-signout {
+  font-family:     'Barlow', sans-serif;
+  font-size:       12px;
+  font-weight:     600;
+  letter-spacing:  1.5px;
+  text-transform:  uppercase;
+  color:           #B4B2A9;
+  background:      none;
+  border:          none;
+  cursor:          pointer;
+  padding:         0;
+  transition:      color 0.2s;
+}
+
+.navbar-signout:hover {
+  color: #C0392B;
+}
+
+.navbar-signup {
+  color:         #F7F4EF !important;
+  border:        1px solid #C0392B;
+  padding:       6px 16px !important;
+  transition:    background 0.2s, color 0.2s !important;
+}
+
+.navbar-signup:hover {
+  background: #C0392B;
+  color:      #F7F4EF !important;
+}

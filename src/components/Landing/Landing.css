@@ -1,0 +1,222 @@
+
+.landing {
+  min-height: 100vh;
+}
+
+.landing__hero {
+  background: #1C1C1C;
+  padding:    60px 40px 40px;
+}
+
+.landing__hero-content {
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+.landing__eyebrow {
+  font-family:    'Barlow', sans-serif;
+  font-size:      11px;
+  font-weight:    700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color:          #C0392B;
+  margin:         0 0 16px;
+}
+
+.landing__title {
+  font-family:    'Playfair Display', serif;
+  font-size:      56px;
+  font-weight:    700;
+  color:          #F7F4EF;
+  line-height:    1.15;
+  letter-spacing: -1px;
+  margin:         0 0 20px;
+}
+
+.landing__subtitle {
+  font-family: 'Barlow', sans-serif;
+  font-size:   17px;
+  color:       #888780;
+  line-height: 1.7;
+  margin:      0 0 32px;
+  max-width:   480px;
+}
+
+.landing__actions {
+  display: flex;
+  gap:     12px;
+}
+
+.landing__btn {
+  font-family:     'Barlow', sans-serif;
+  font-size:       12px;
+  font-weight:     700;
+  letter-spacing:  1.5px;
+  text-transform:  uppercase;
+  padding:         12px 28px;
+  border:          none;
+  cursor:          pointer;
+  transition:      background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.landing__btn--primary {
+  background: #C0392B;
+  color:      #F7F4EF;
+}
+
+.landing__btn--primary:hover {
+  background: #A93226;
+}
+
+.landing__btn--secondary {
+  background:   none;
+  border:       1px solid #555;
+  color:        #B4B2A9;
+}
+
+.landing__btn--secondary:hover {
+  border-color: #F7F4EF;
+  color:        #F7F4EF;
+}
+
+/* Stats */
+.landing__stats {
+  display:     flex;
+  align-items: center;
+  gap:         32px;
+  padding-top: 32px;
+  border-top:  1px solid #333;
+}
+
+.landing__stat {
+  display:        flex;
+  flex-direction: column;
+  gap:            4px;
+}
+
+.landing__stat-num {
+  font-family:    'Playfair Display', serif;
+  font-size:      28px;
+  font-weight:    700;
+  color:          #F7F4EF;
+  line-height:    1;
+}
+
+.landing__stat-label {
+  font-family:    'Barlow', sans-serif;
+  font-size:      11px;
+  font-weight:    600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color:          #888780;
+}
+
+.landing__stat-divider {
+  width:      1px;
+  height:     40px;
+  background: #333;
+}
+
+.landing__preview {
+  padding:    40px;
+  background: #F7F4EF;
+}
+
+.landing__preview-header {
+  display:         flex;
+  justify-content: space-between;
+  align-items:     center;
+  margin-bottom:   6px;
+}
+
+.landing__preview-title {
+  font-family: 'Playfair Display', serif;
+  font-size:   22px;
+  font-weight: 700;
+  color:       #1C1C1C;
+  margin:      0;
+}
+
+.landing__preview-link {
+  font-family:    'Barlow', sans-serif;
+  font-size:      12px;
+  font-weight:    600;
+  letter-spacing: 1px;
+  color:          #C0392B;
+  cursor:         pointer;
+  text-decoration: underline;
+}
+
+.landing__preview-link:hover {
+  color: #1C1C1C;
+}
+
+.landing__rule {
+  border:     none;
+  height:     2px;
+  background: #1C1C1C;
+  margin:     6px 0 24px;
+}
+
+.landing__grid {
+  display:               grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap:                   16px;
+}
+
+.landing__card {
+  background:  #fff;
+  border:      1px solid #E2DDD5;
+  cursor:      pointer;
+  transition:  border-color 0.2s, transform 0.2s;
+}
+
+.landing__card:hover {
+  border-color: #C0392B;
+  transform:    translateY(-2px);
+}
+
+.landing__card-poster {
+  aspect-ratio: 2/3;
+  overflow:     hidden;
+  background:   #2C2416;
+  display:      flex;
+  align-items:  center;
+  justify-content: center;
+}
+
+.landing__card-poster img {
+  width:      100%;
+  height:     100%;
+  object-fit: cover;
+}
+
+.landing__card-placeholder {
+  font-size: 28px;
+}
+
+.landing__card-info {
+  padding:    10px 12px 12px;
+  border-top: 3px solid #1C1C1C;
+}
+
+.landing__card-year {
+  font-family:    'Barlow', sans-serif;
+  font-size:      10px;
+  font-weight:    700;
+  letter-spacing: 2px;
+  color:          #C0392B;
+  text-transform: uppercase;
+  margin-bottom:  4px;
+}
+
+.landing__card-title {
+  font-family:   'Playfair Display', serif;
+  font-size:     13px;
+  font-weight:   700;
+  color:         #1C1C1C;
+  line-height:   1.3;
+  white-space:   nowrap;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+}

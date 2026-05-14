@@ -1,44 +1,45 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useContext } from "react";
 import { UserContext } from "../../contexts/UserContext";
+import './Navbar.css'
 
 const Navbar = () => {
   const { user, setUser } = useContext(UserContext);
-
+  const navigate = useNavigate();
   const handleSignOut = () => {
     localStorage.removeItem("token");
     setUser(null);
+    navigate("/");
   };
 
   return (
-    <nav>
-      <ul>
+    <nav className="navbar">
+      <Link to="/" className="navbar-logo">
+        Cine<span>Log</span>
+      </Link>
+      <ul className="navbar-links">
+        <li>
+          <Link to="/movies">Browse Films</Link>
+        </li>
         {user ? (
           <>
-            <li>Welcome Back {user.username}</li>
+            <li className="navbar-welcome">Welcome Back {user.username}</li>
             <li>
-              <Link to="/movies">Browse Films</Link>
-            </li>
-            <li>
-              <Link to="/" onClick={handleSignOut}>
+              <button className="navbar-signout" onClick={handleSignOut}>
                 Sign Out
-              </Link>
+              </button>
             </li>
           </>
         ) : (
           <>
             <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/sign-up">Sign Up</Link>
+              <Link to="/sign-up" className="navbar-signup">
+                Sign Up
+              </Link>
             </li>
             <li>
               <Link to="/sign-in">Sign In</Link>
-            </li>
-            <li>
-              <Link to="/movies">Browse Films</Link>
             </li>
           </>
         )}
