@@ -1,16 +1,38 @@
-# React + Vite
+# CineLog 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![CineLog Screenshot](./src/assets/screenshot.png)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+CineLog is a social platform for classic film enthusiasts. Browse over 21,000 films from 1905 to 2015, write reviews and personal experiences, and engage with other cinephiles through comments.
 
-## React Compiler
+Whether you're a lifelong fan of silent films or just discovering the golden age of Hollywood, CineLog gives you a place to share your thoughts and connect with others who share your passion.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the ESLint configuration
+- 🌐 [Live App]()
+- 📋 [Planning Materials](https://trello.com/b/GrnrEK2L)
+- 🗄️ [Back-end Repository]()
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- **Front-end:** React, React Router, CSS
+- **Back-end:** Node.js, Express
+- **Database:** MongoDB, Mongoose
+- **Authentication:** JWT (JSON Web Tokens), bcrypt
+- **Fonts:** Google Fonts (Playfair Display, Barlow)
+- **Deployment:** 
+
+## Attributions
+
+- [MongoDB Sample Mflix Dataset](https://www.mongodb.com/docs/atlas/sample-data/sample-mflix/) — 21,000 classic films dataset
+- [Google Fonts](https://fonts.google.com/) — Playfair Display & Barlow typefaces
+
+## Next Steps
+
+- 🔍 Search films by title
+- ⭐ Rate films from 1 to 5 stars in posts
+- 👤 User profile pages showing all posts by a user
+- ❤️ Like other users' posts
+- 🎭 Filter films by decade
+- ✏️ Edit and delete comments
