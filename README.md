@@ -10,9 +10,9 @@ Whether you're a lifelong fan of silent films or just discovering the golden age
 
 ## Getting Started
 
-- 🌐 [Live App]()
+- 🌐 [Live App](https://cinelog81.netlify.app/)
 - 📋 [Planning Materials](https://trello.com/b/GrnrEK2L)
-- 🗄️ [Back-end Repository]()
+- 🗄️ [Back-end Repository](https://github.com/levi81770/Cine-Log-Back-End)
 
 ## Technologies Used
 
